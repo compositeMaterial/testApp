@@ -48,7 +48,7 @@ private val retrofit = Retrofit.Builder()
 interface NetworkApiService {
 
     @FormUrlEncoded
-    @POST("ymobws/json/pointList")
+    @POST("mobws/json/pointList")
     suspend fun getProperties(
         @Query("count") c: Int = 3,
         @Query("version") v: Double = 1.1,
