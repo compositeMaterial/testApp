@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/yValue"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/xValue"
+            app:layout_constraintTop_toBottomOf="@+id/xValue" />
+
+        <TextView
+            android:id="@+id/xValue"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/countValue"
+            app:layout_constraintTop_toBottomOf="@+id/countValue" />
+
+        <TextView
+            android:id="@+id/countValue"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
